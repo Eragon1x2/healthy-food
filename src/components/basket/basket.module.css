@@ -1,0 +1,128 @@
+.modal_backdrop {
+    position: fixed;
+    z-index: 999;
+    width: 750px;
+    height: 500px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    /* background-color: rgb(0, 181, 111); */
+    -webkit-box-shadow: -3px 0px 26px 12px rgba(166, 166, 166, 0.46);
+-moz-box-shadow: -3px 0px 26px 12px rgba(166, 166, 166, 0.46);
+box-shadow: -3px 0px 26px 12px rgba(166, 166, 166, 0.46);
+/* overflow-y: scroll; */
+
+}
+.basket_title {
+    color: rgb(0, 181, 111);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basket_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.basket_list_item {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    inset: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+    
+}
+/* .basket_list_item:nth-child(odd) {
+    background-color: rgb(232, 232, 232);
+} */
+.basket_list_item img {
+    width: 100px;
+    height: 100px;
+}
+.basket_list_item h3 {
+    max-width: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.basket_list_item p {
+    font-size: 13px;
+}
+.basket_list_item_button {
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 200);
+}
+.basket_trash {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+.trash {
+    display: inline-block;
+    width: 40px;
+}
+.trash:hover .basket_trash * {
+    fill: rgb(0, 204, 163);
+    
+}
+.trash:hover {
+    border-radius: 50%;
+   background-color: black;
+}
+.modal_close {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+
+}
+.modal_close * {
+    fill: rgb(0, 181, 111);
+}
+.modal_close_div:hover .modal_close * {
+    fill: black;
+}
+.basket_left {
+    width: 30px;
+    margin-right: 10px;
+}
+.gg {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+
+}
+.basket_price {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.basket_total {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: rgb(0, 181, 111);
+}
+@media(max-width: 425.9px) {
+    .modal_backdrop {
+        width: 100vw;
+        height: 100vh;
+    }
+}
